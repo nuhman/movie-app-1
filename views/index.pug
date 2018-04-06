@@ -1,0 +1,24 @@
+html
+  head 
+    link(
+      rel= "stylesheet",
+      href="../styles/style.css" 
+    )
+    script(
+      src="../scripts/script.js"
+      type="text/javascript"
+    )
+  body( onload = 'init()')
+    header
+      h1#heading App
+      p welcome #{user.username}
+      img(
+        src=user.thumbnail
+      )
+    div#container
+      h1 Select.  
+      button(
+        onClick = "findMore()"
+      ) Find More
+      div#movie-list
+                        
